@@ -122,7 +122,7 @@ describe Assignment do
             expect(TodoItem < ActiveRecord::Base).to eq(true)
           end
           context "TodoItem class properties defined" do
-            subject(:todoitem) { TodoItem.new }
+            subject(:todolist) { TodoItem.new }
             it { is_expected.to respond_to(:due_date) } 
             it { is_expected.to respond_to(:title) } 
             it { is_expected.to respond_to(:description) } 
